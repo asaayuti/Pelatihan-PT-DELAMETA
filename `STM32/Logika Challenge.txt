@@ -1,0 +1,9 @@
+1. Sensor Flame mendeteksi api,
+Jika ada api => PIR aktif, ultrasonik aktif, lampu merah nyala
+Jika tidak ada api => PIR mati, ultrasonik mati, lampu merah mati
+2. Sensor PIR mendeteksi gerakan (orang), 
+Jika ada 2 gerakan => lampu hijau aktif, lampu merah mati
+Jika < 2 gerakan => lampu merah tetap nyala, lampu hijau mati
+3. Sensor ultrasonik mendeteksi ketinggian air
+Jika >= 10 && <= 300, lampu kuning (motor mati)
+Jika <10, lampu kuning mati (motor mati)

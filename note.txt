@@ -1,0 +1,50 @@
+ldr sinyalnya analog
+sensor suhu ds
+sensor suhu dan kelembaban dht11
+analog a0 a5 defaultnya didefinisikan input
+
+jelaskan fungsi dan cara kerja sensor
+hardware serial adalah serial yang sudah ada di pin arduino/ stm32
+software serial adalah serial yang diprogram dan pinnya dimasukan dipin selain pin rx tx 
+pake libraray <SoftwareSerial.h>
+distm32 tidak bisa pake software serial
+
+penjelasan serial/uart, i2c, spi dan fungsi/buat sensor apa
+pake led biasa pake resistor
+ngoding logika dikertas, kodingannya ga pake library , blind coding
+fungsi mapping (kodingan)
+pelajari dokumentasi arduino
+bikin palang pintu pake arduino lcd sama rfid sudah disiapin/kodingan basic disuruh bikin logikanya
+sistem parkir, flame , button
+
+kisi kisi ujian
+//inisialisasi setting pin baca print to serial print to lcd , logika
+flame atau rfid pake lcd codingan rfid dasar udah disiapin, pake stm/ arduino pinoutnya dikasih, koding servo
+kodingan rfidnya yang pake function/ void
+buat rangkaian sama tabel pin nyambungnya ke kaki arduino mana
+belajar menjelaskan
+
+serial/uart: rx tx	untuk gps
+i2c: sda scl 		untuk lcd
+spi: sck miso mosi 	untuk rfid
+
+pin i2c 
+arduino:sda A4, scl A5
+stm32: sda PB7, PB11 ||scl PB6, PB10
+
+pin serial/uart 
+arduino: rx 0, tx 1
+stm32: rx PA10, PA3, PB11 || TX PA9, PA2, PB10
+
+pin spi
+ARDUINO: sck 13, miso 12, mosi 11
+STM32: SCK PB3, PB13, PA5 || MISO PB4, PB14, PA6 || MOSI PB5, PB15, PA7
+
+pin reset dan sda dipin mana aja
+
+buatlah rangkaian untuk sensor flame dan arduino
+dimapping 
+logika
+ketika tidak ada api dia serial "normal"
+"api kecil terdeteksi" 
+kalo besar "api besar terdeteksi"
